@@ -20,7 +20,7 @@ bears$MONTH<- as.factor(bears$MONTH)
 ```{r}
 plot(WEIGHT~SEX,data=bears)
 ```
-
+The bigger box is the male and the smaller one is the female so we don't have to call them bear 1 and bear 2.
 
 
 
