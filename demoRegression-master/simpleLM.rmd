@@ -105,7 +105,10 @@ summary(lmWeight)
 lmChest = lm(LENGTH ~ CHEST, data = mbears)
 summary(lmChest)
 ```
-
+```{r}
+lmHeadLen = lm(LENGTH ~ HEADLEN, data = mbears)
+summary(lmHeadLen)
+```
 
 
 
