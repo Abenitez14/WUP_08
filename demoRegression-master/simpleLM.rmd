@@ -113,7 +113,10 @@ summary(lmHeadLen)
 lmHeadWth = lm(LENGTH ~ HEADWTH, data = bears)
 summary(lmHeadWth)
 ```
-
+```{r}
+lmAge = lm(LENGTH ~ AGE, data = mbears)
+summary(lmAge)
+```
 
 
 
