@@ -17,6 +17,12 @@ bears <- read.csv(file="BEARS.csv",header = TRUE)
 bears$SEX<- as.factor(bears$SEX)
 bears$MONTH<- as.factor(bears$MONTH)
 ```
+```{r}
+plot(WEIGHT~SEX,data=bears)
+```
+
+
+
 
 ## Model LENGTH ~ NECK  this is an example  
 
@@ -36,4 +42,46 @@ predict(simp,new)
 predict(simp,new,se.fit=TRUE)
 ```
 ## Surely there is another variable that can better predict LENGTH than NECK. Find one and compare its performance to that of neck by it value of Adjusted-Rsquared (bigger is better).
+
+
+```{r}
+lmNeck = lm(LENGTH ~ NECK, data = bears)
+summary(lmNeck)
+```
+
+```{r}
+lmWeight = lm(LENGTH ~ WEIGHT, data = bears)
+summary(lmWeight)
+```
+
+```{r}
+lmChest = lm(LENGTH ~ CHEST, data = bears)
+summary(lmChest)
+```
+
+```{r}
+lmHeadLen = lm(LENGTH ~ HEADLEN, data = bears)
+summary(lmHeadLen)
+```
+
+```{r}
+lmHeadWth = lm(LENGTH ~ HEADWTH, data = bears)
+summary(lmHeadWth)
+```
+
+```{r}
+lmAge = lm(LENGTH ~ AGE, data = bears)
+summary(lmAge)
+```
+
+1.length and head length    
+2.Length and chest   
+3.Length and neck  
+4.length and Weight  
+5.Length and Head Width  
+6.Length and Age  
+
+
+
+
 
