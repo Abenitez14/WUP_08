@@ -101,3 +101,26 @@ summary(lmNeck)
 lmWeight = lm(LENGTH ~ WEIGHT, data = mbears)
 summary(lmWeight)
 ```
+```{r}
+lmChest = lm(LENGTH ~ CHEST, data = mbears)
+summary(lmChest)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
