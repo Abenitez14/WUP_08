@@ -109,7 +109,10 @@ summary(lmChest)
 lmHeadLen = lm(LENGTH ~ HEADLEN, data = mbears)
 summary(lmHeadLen)
 ```
-
+```{r}
+lmHeadWth = lm(LENGTH ~ HEADWTH, data = bears)
+summary(lmHeadWth)
+```
 
 
 
